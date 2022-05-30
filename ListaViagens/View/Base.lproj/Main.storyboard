@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cdb-IX-lmh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0dG-Ig-xPk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,10 +8,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="pMo-QL-d6l">
+            <objects>
+                <viewController id="0dG-Ig-xPk" customClass="LaunchScreenViewController" customModule="ListaViagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pj4-uY-jxK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen" translatesAutoresizingMaskIntoConstraints="NO" id="u5Z-qW-7Eq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lista Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHW-Z5-fWS">
+                                <rect key="frame" x="126.5" y="484" width="161" height="37"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zwP-W0-6UN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u5Z-qW-7Eq" secondAttribute="bottom" id="54t-xh-Xez"/>
+                            <constraint firstItem="QHW-Z5-fWS" firstAttribute="centerX" secondItem="Pj4-uY-jxK" secondAttribute="centerX" id="5uk-FG-jfE"/>
+                            <constraint firstItem="u5Z-qW-7Eq" firstAttribute="top" secondItem="Pj4-uY-jxK" secondAttribute="top" id="8Hr-2D-3DL"/>
+                            <constraint firstItem="u5Z-qW-7Eq" firstAttribute="trailing" secondItem="zwP-W0-6UN" secondAttribute="trailing" id="WFQ-CR-62e"/>
+                            <constraint firstItem="u5Z-qW-7Eq" firstAttribute="leading" secondItem="zwP-W0-6UN" secondAttribute="leading" id="ZXe-cT-Rm2"/>
+                            <constraint firstItem="QHW-Z5-fWS" firstAttribute="top" secondItem="zwP-W0-6UN" secondAttribute="top" constant="440" id="lg9-44-E4n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listaViagensLabel" destination="QHW-Z5-fWS" id="7a2-kv-Ia1"/>
+                        <outlet property="listaViagensTopConstraint" destination="lg9-44-E4n" id="yP4-WE-Lfe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2b-bm-0m4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575.3623188405797" y="67.633928571428569"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="A5l-Ay-byt">
             <objects>
-                <navigationController navigationBarHidden="YES" id="cdb-IX-lmh" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" navigationBarHidden="YES" id="cdb-IX-lmh" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K4M-VR-Tdy">
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +66,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ListaViagens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ListaViagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +96,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launch-screen" width="719" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

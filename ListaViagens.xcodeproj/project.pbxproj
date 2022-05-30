@@ -29,6 +29,8 @@
 		5BA9391228358B1F00199601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9391028358B1F00199601 /* LaunchScreen.storyboard */; };
 		5BA9391A28358F0500199601 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9391928358F0500199601 /* HomeTableViewHeader.xib */; };
 		5BA9391C2835927C00199601 /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA9391B2835927C00199601 /* HomeTableViewHeader.swift */; };
+		5BB70E01283EC5060084056D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB70E00283EC5060084056D /* LaunchScreenViewController.swift */; };
+		5BB70E03283EDBB10084056D /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB70E02283EDBB10084056D /* UIScreen+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		5BA9391328358B1F00199601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BA9391928358F0500199601 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
 		5BA9391B2835927C00199601 /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
+		5BB70E00283EC5060084056D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		5BB70E02283EDBB10084056D /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				5BA9390928358B1E00199601 /* ViewController.swift */,
+				5BB70E00283EC5060084056D /* LaunchScreenViewController.swift */,
 				5BA9390B28358B1E00199601 /* Main.storyboard */,
 				5B859284283D116E0058B57B /* DetalheViewController */,
 				5B2564612836B64B00EEE1D5 /* Header */,
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				5B2564722836CC7B00EEE1D5 /* UIView+Extension.swift */,
+				5BB70E02283EDBB10084056D /* UIScreen+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,10 +294,12 @@
 				5B25646D2836CC3400EEE1D5 /* DecodableData.swift in Sources */,
 				5BA9391C2835927C00199601 /* HomeTableViewHeader.swift in Sources */,
 				5BA9390628358B1E00199601 /* AppDelegate.swift in Sources */,
+				5BB70E03283EDBB10084056D /* UIScreen+Extension.swift in Sources */,
 				5B2564692836CC1B00EEE1D5 /* Viagem.swift in Sources */,
 				5BA9390828358B1E00199601 /* SceneDelegate.swift in Sources */,
 				5B2564752836CDB000EEE1D5 /* ViagemViewModel.swift in Sources */,
 				5B859287283D11850058B57B /* DetalheViewController.swift in Sources */,
+				5BB70E01283EC5060084056D /* LaunchScreenViewController.swift in Sources */,
 				5B2564772836CE6500EEE1D5 /* ViagemDestaqueViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

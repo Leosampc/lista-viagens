@@ -15,16 +15,37 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen" translatesAutoresizingMaskIntoConstraints="NO" id="ANe-Zx-u9A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lista Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxm-00-ohR">
+                                <rect key="frame" x="126.5" y="484" width="161" height="37"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ANe-Zx-u9A" secondAttribute="bottom" id="1n5-mC-dnt"/>
+                            <constraint firstItem="ANe-Zx-u9A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5l3-he-Zd6"/>
+                            <constraint firstItem="Yxm-00-ohR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LZF-Gh-G92"/>
+                            <constraint firstItem="Yxm-00-ohR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="440" id="Mle-Cf-2RE"/>
+                            <constraint firstItem="ANe-Zx-u9A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RVC-zT-l3E"/>
+                            <constraint firstItem="ANe-Zx-u9A" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Zyk-Vk-Ec7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="launch-screen" width="719" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
